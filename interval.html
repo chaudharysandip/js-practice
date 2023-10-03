@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Set Interval Run</h1>
+        <button id="play">Play</button>
+        <button id="stop">Stop</button>
+    </main>
+</body>
+<script>
+    let interValid;
+    const changeText =()=>{
+        document.querySelector('h1').innerHTML = "Set Interval Start";
+        console.log('run run run');
+    }
+
+    const changeMe = document.querySelector('#play').addEventListener('click', ()=>{
+        intervalId = setInterval(changeText, 1000);
+        console.log("Start");
+    })
+
+    document.querySelector('#stop').addEventListener('click', ()=>{
+        clearInterval(intervalId);
+        interValid = null;
+        console.log("Stop");
+    })
+</script>
+</html>

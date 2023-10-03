@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./inde.css" />
+  </head>
+  <body>
+    <main>
+      <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const parent = document.querySelector('.parent');
+    // console.log("Parent",parent)
+    // console.log("Parent",parent.children)
+    // console.log("Parent",parent.children[1].innerHTML)
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML)
+    // }
+    parent.children[1].style.color ="red";
+    console.log(parent.firstElementChild)
+    console.log(parent.lastElementChild)
+</script>
+</html>

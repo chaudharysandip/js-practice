@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const createDiv = document.createElement('div'); 
+    console.log(createDiv)
+    createDiv.className = "main"
+    createDiv.id = "main";
+    createDiv.id = Math.round(Math.random() * 10 + 1);
+    createDiv.setAttribute('title', "Generated Title");
+    createDiv.style.background = "red";
+    createDiv.style.padding = "20px";
+    // createDiv.innerHTML = "Sandeep Dev";
+    const addText = document.createTextNode("Sandeep");
+    createDiv.appendChild(addText);
+
+    document.body.appendChild(createDiv);
+</script>
+
+</html>
